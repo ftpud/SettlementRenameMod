@@ -190,10 +190,10 @@
     <Compile Include="ToolsHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GUI\Prefabs\SettlementRenameMenu.xml">
+    <Content Include="SettlementRename\GUI\Prefabs\SettlementRenameMenu.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="SubModule.xml">
+    <Content Include="SettlementRename\SubModule.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
