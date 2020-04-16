@@ -183,16 +183,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <Compile Include="ModOptionsMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaveDataStore.cs" />
+    <Compile Include="baseBehavior.cs" />
     <Compile Include="SettlementNameInfo.cs" />
     <Compile Include="ToolsHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SettlementRename\GUI\Prefabs\SettlementRenameMenu.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="SettlementRename\SubModule.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

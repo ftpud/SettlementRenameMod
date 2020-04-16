@@ -15,13 +15,14 @@ namespace SettlementRename
             Campaign campaign = game.GameType as Campaign;
             if (campaign == null) return;
             CampaignGameStarter gameInitializer = (CampaignGameStarter)gameStarterObject;
-            gameInitializer.AddBehavior(new SaveDataStore());
+            gameInitializer.AddBehavior(new baseBehavior());
         }
 
         public override void OnGameEnd(Game game)
         {
             // Remove all data from static DataStore.
-            SaveDataStore._customDataMap = null;
+            baseBehavior._customDataMap = null;
         }
+        
     }
 }

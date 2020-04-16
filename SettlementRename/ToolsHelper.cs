@@ -32,18 +32,18 @@ namespace SettlementRename
             }
 
             sourceSettlement.Name = new TextObject(newName);
-            if (SaveDataStore._customDataMap == null)
+            if (baseBehavior._customDataMap == null)
             {
-                SaveDataStore._customDataMap = new Dictionary<string, string>();
+                baseBehavior._customDataMap = new Dictionary<string, string>();
             }
 
-            var storage = SaveDataStore._customDataMap;
+            var storage = baseBehavior._customDataMap;
             if (storage.ContainsKey(sourceSettlement.Id.ToString()))
             {
                 storage.Remove(sourceSettlement.Id.ToString());
             }
 
-            SaveDataStore._customDataMap.Add(sourceSettlement.Id.ToString(), newName);
+            baseBehavior._customDataMap.Add(sourceSettlement.Id.ToString(), newName);
             Campaign.Current.EncyclopediaManager.CreateEncyclopediaPages();
         }
     }
